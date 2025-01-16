@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camera Gear Inventory</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Camera Gear Inventory</h1>
+      <nav>
+        <ul>
+          <li><a href="#dashboard">Dashboard</a></li>
+          <li><a href="#inventory">Inventory</a></li>
+          <li><a href="#add-gear">Add New Gear</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="dashboard">
+        <h2>Dashboard Overview</h2>
+        <div class="stats">
+          <div class="stat">
+            <img src="./src/camera.png" alt="Camera" />
+            <h3>Cameras</h3>
+            <p><span id="amountOfCameras"></span></p>
+          </div>
+          <div class="stat">
+            <img src="./src/lens.png" alt="Lens" />
+            <h3>Lenses</h3>
+            <p><span id="amountOfLenses"></span></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="inventory">
+        <h2>Inventory List</h2>
+        <table id="cameraTable">
+          <thead id="listHead">
+            <tr>
+              <th>Cameras</th>
+              <th>Technology</th>
+              <th>Sensor Size</th>
+              <th>Megapixels</th>
+              <th>Lens Mount</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Javascript will populate this body with the saved Objects from the cameras array -->
+          </tbody>
+        </table>
+        <table id="lensTable">
+          <thead id="listHead">
+            <tr>
+              <th>Lenses</th>
+              <th>Focal Length</th>
+              <th>Apeture</th>
+              <th>For Sensor Size</th>
+              <th>Mounting System</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- Javascript will populate this body with the saved Objects from the lenses array -->
+          </tbody>
+        </table>
+      </section>
+
+      <section id="add-gear">
+        <h2 id="formTitel">Add New Gear</h2>
+        <form id="gearForm">
+          <label for="type">Type:</label>
+          <select id="type">
+            <option value="camera">Camera</option>
+            <option value="lens">Lens</option>
+          </select>
+
+          <div id="dynamicFields">
+            <!-- Javascript will populate this form with the input fields for the chosen type of gear-->
+          </div>
+
+          <button id="submitButton" type="submit">Add Gear</button>
+          <button id="revertButton" type="button" onclick="exitEditMode()" style="display: none" ;>
+            <!--Button is not displayed until we enter the editing Mode-->
+            Revert to adding new Gear
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 Camera Gear Inventory</p>
+    </footer>
+    <script type="text/javascript" src="js/camera.js"></script>
+    <script type="text/javascript" src="js/lens.js"></script>
+    <script type="text/javascript" src="js/form.js"></script>
+    <script type="text/javascript" src="js/inventory.js"></script>
+    <script type="text/javascript" src="js/dashboard.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        loadFromLocalStorage();
+        fillInventory();
+        initGear();
+        updateDashboard();
+      });
+    </script>
+  </body>
+</html>

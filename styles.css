@@ -1,0 +1,187 @@
+header {
+  background: linear-gradient(to right, #003459, #005f73);
+  color: #ffffff;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  padding: 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 15px;
+}
+
+nav {
+  margin-left: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #005f73;
+}
+
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaeaea;
+  color: #00171f;
+}
+
+main {
+  padding: 20px;
+}
+
+#dashboard {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  margin-bottom: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 1px solid #dcdcdc;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  border: 8px solid #003459;
+  background: linear-gradient(to left, #003459, #005f73);
+  color: #ffffff;
+}
+
+.gray-background {
+  background: #dcdcdc;
+  color: black;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+table th,
+table td {
+  border: 1px solid #dcdcdc;
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: #003459;
+  color: #ffffff;
+}
+
+table tr:hover {
+  background: rgba(255, 255, 255, 0.5); /* Highlight row on hover */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 5px;
+  transition: border-color 0.5s;
+  box-sizing: border-box;
+}
+
+form input:focus,
+form select:focus {
+  border-color: #003459; /* Change border color on focus */
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px;
+  background: #003459;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.5s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+  background: #005f73;
+  color: #ffffff;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to left, #003459, #005f73);
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+#dashboard p {
+  font-size: larger;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}
+
+#actionButtons {
+  margin-right: 7px;
+}
+
+h2 {
+  color: #003459;
+  text-align: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
