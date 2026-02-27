@@ -100,12 +100,14 @@ table th,
 table td {
   border: 1px solid #dcdcdc;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 table th {
   background: #003459;
   color: #ffffff;
+  width: 15%;
+  text-align: center;
 }
 
 table tr:hover {
