@@ -143,7 +143,7 @@ function updateDynamicFields() {
             <input type="text" id="focalLength" placeholder="50, 24-70 etc" required />
 
             <label for="aperture">Aperture:</label>
-            <input type="number" id="aperture" placeholder="1.8, 2.8 etc" required />
+            <input type="number" step="0.1" id="aperture" placeholder="1.8, 2.8 etc" required />
 
             <label for="mountingSystem">Lens Mounting System:</label>
             <input type="text" id="mountingSystem" placeholder="E, EF/EF-S etc" required maxlength="100" />
